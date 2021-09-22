@@ -72,6 +72,6 @@ def appstatus():
 # Route to do the prediction using the ML model defined.
 # Payload: QueryIn containing the parameters
 # Response: QueryOut containing the flower_class predicted (200)
-def predict_flower(query_data: QueryIn):
+def predict_setosa(query_data: QueryIn):
     output = {"flower_class": predict(query_data),"timestamp":datetime.now().strftime("%m/%d/%Y, %H:%M:%S")}
     return output
